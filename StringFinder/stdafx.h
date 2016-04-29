@@ -1,6 +1,8 @@
 #ifndef STDAFX_H
 #define STDAFX_H
 
+using namespace std;
+
 #include <SDKDDKVer.h>
 
 #include <stdio.h>
@@ -8,7 +10,7 @@
 
 #include <vector>
 #include <string>
-
+#include <iostream>
 #if defined(_MSC_VER)
 #pragma warning (disable: 4512)
 #endif // _MSC_VER
