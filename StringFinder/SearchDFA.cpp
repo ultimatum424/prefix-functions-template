@@ -13,13 +13,9 @@ CSearchDFA::~CSearchDFA()
 void CSearchDFA::Compile(const std::string &needle)
 {
 	m_needle = needle;
-	int n = m_needle.length();
+	size_t n = m_needle.length();
 	vector< vector<int> > nxt(n + 1, vector<int>(256));
 	vector<int> p = GetSearchPrefixFunctions(m_needle); 
-	std::cout << m_needle << std::endl;
-	for (auto i : p)
-		std::cout << i;
-	std::cout << std::endl;
 	nxt[0][m_needle[0]] = 1;
 	for (int i = 1; i <= n; i++) {
 		for (int c = 0; c < 256; c++)
