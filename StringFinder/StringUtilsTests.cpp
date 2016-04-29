@@ -9,7 +9,7 @@ using std::vector;
 using std::string;
 
 BOOST_AUTO_TEST_SUITE(StringUtils_class)
-	/*BOOST_AUTO_TEST_CASE(can_check_if_contains)
+	BOOST_AUTO_TEST_CASE(can_check_if_contains)
 	{
 		const std::string needle = "ax";
 		const std::string text = "axdaxabxo!";
@@ -38,7 +38,7 @@ BOOST_AUTO_TEST_SUITE(StringUtils_class)
 		std::vector<size_t> expected = {0, 3};
 		BOOST_CHECK(matches == expected);
 		
-	}*/
+	}
 
 	BOOST_AUTO_TEST_CASE(calculates_prefix_function_to_inputted_string)
 	{
